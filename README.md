@@ -3,11 +3,17 @@ Python wraper for matter.js
 
 # install
 
-- install flexx
+- install flexx v0.4
 
 ```
 pip install https://github.com/flexxui/flexx/archive/master.zip
 
+```
+
+- install matter.py
+
+```
+pip install https://github.com/xxxspy/matter.py/archive/master.zip
 ```
 
 # example

@@ -18,6 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
     ),
     dependency_links=[
-        'https://github.com/flexxui/flexx/archive/master.zip#egg=mayo-v0.4.2',
+        'https://github.com/flexxui/flexx/archive/master.zip#egg=flexx-v0.4.2',
         ]
 )

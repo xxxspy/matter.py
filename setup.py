@@ -17,5 +17,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
     ),
-    install_requires=['https://github.com/flexxui/flexx/archive/master.zip']
+    dependency_links=[
+        'https://github.com/flexxui/flexx/archive/master.zip',
+        ]
 )

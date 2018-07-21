@@ -18,6 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
     ),
     dependency_links=[
-        'https://github.com/flexxui/flexx/archive/master.zip',
+        'git+ssh://git@github.com:xxxspy/matter.py.git',
         ]
 )

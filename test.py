@@ -1,21 +1,6 @@
-# matter.py
-Python wraper for matter.js
-
-# install
-
-- install flexx
-
-```
-pip install https://github.com/flexxui/flexx/archive/master.zip
-
-```
-
-# example
-
-Run the code below , and you will see webbrowser opened a NamedTemporaryFile: 
-
-```python
+import unittest
 import matter
+
 
 def make_boxes():
     Bodies = Matter.Bodies
@@ -51,10 +36,10 @@ def drop():
     # run the renderer
     Render.run(render)
 
+class Test(unittest.TestCase):
+
+    def test_show(self):
+        matter.show([make_boxes, drop])
+
 if __name__ == '__main__':
-    matter.show([make_boxes, drop])
-```
-
-You will see:
-
-<img src="example.gif" />
+    unittest.main()

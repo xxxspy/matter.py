@@ -18,6 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
     ),
     data_files=[
-            ('matter', ['template.html']),
+            ('matter', ['matter/template.html']),
         ]
 )

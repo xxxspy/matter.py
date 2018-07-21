@@ -18,6 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
     ),
     dependency_links=[
-        'git+ssh://git@github.com:xxxspy/matter.py.git',
+        'git+ssh://git@github.com:xxxspy/matter.py.git#egg=master',
         ]
 )

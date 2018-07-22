@@ -46,10 +46,11 @@ def register_notebook():
     dir_path = Path(os.path.join(cwd, dir_name))
     dir_path.mkdir(parents=True, exist_ok=True)
     template = settings.TEMPLATE.read_text(encoding='utf8')
-    namespaces = list(_NAMESPACES.values())
-    namespaces = '\n'.join(namespaces) if namespaces else ''
+
     @register_cell_magic
     def matter_inline(line, cell):
+        namespaces = list(_NAMESPACES.values())
+        namespaces = '\n'.join(namespaces) if namespaces else ''
         kws = line.split(' ')
         kwargs = {}
         for kw in kws:

@@ -39,6 +39,7 @@ def drop():
 class Test(unittest.TestCase):
 
     def test_show(self):
+        matter.add_namespace('jQuery', '<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>')
         matter.show([make_boxes, drop])
 
 if __name__ == '__main__':

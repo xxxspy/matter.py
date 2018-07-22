@@ -21,7 +21,7 @@ def show(objs):
         last_call = objs.__name__ + '()'
     scripts.append(last_call)
     scripts = '\n'.join(scripts)
-    namespaces = list(_NAMESPACES.keys())
+    namespaces = list(_NAMESPACES.values())
     namespaces = '\n'.join(namespaces) if namespaces else ''
     template = settings.TEMPLATE.read_text(encoding='utf8')
     html = template.format(script=scripts, namespaces=namespaces)
@@ -46,7 +46,7 @@ def register_notebook():
     dir_path = Path(os.path.join(cwd, dir_name))
     dir_path.mkdir(parents=True, exist_ok=True)
     template = settings.TEMPLATE.read_text(encoding='utf8')
-    namespaces = list(_NAMESPACES.keys())
+    namespaces = list(_NAMESPACES.values())
     namespaces = '\n'.join(namespaces) if namespaces else ''
     @register_cell_magic
     def matter_inline(line, cell):
